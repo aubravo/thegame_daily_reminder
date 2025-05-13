@@ -1,0 +1,4 @@
+twilio
+boto3
+pydantic
+pydantic-settings
