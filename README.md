@@ -37,3 +37,18 @@ Run as:
 python -m send_sms_notification.py
 ```
 
+## Other uses
+
+I recommend setting up a cronjob so that the notification is sent daily to the list of phones, you can do that editing your crontab file in Linux using:
+```
+crontab -e
+```
+
+And adding a line to run the script, like:
+```
+* * * * * cd /projects/thegame_daily_reminder && ./venv/bin/activate -m send_sms_notification 
+```
+The above example would send a notification every minute
+
+
+
