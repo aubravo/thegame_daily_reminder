@@ -46,7 +46,7 @@ crontab -e
 
 And adding a line to run the script, like:
 ```
-* * * * * cd /projects/thegame_daily_reminder && ./venv/bin/activate -m send_sms_notification 
+* * * * * cd /projects/thegame_daily_reminder && ./venv/bin/python -m send_sms_notification 
 ```
 The above example would send a notification every minute
 
